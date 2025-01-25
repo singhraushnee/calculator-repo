@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="4"><input type="text" name="res" id="res"></th>
+        </tr>
+        <tr>
+            <th><input type="button" value="1" onclick="getval(1)"></th>
+            <th><input type="button" value="2" onclick="getval(2)"></th>
+            <th><input type="button" value="3" onclick="getval(3)"></th>
+            <th><input type="button" value="+" onclick="getval('+')"></th>
+        </tr>
+
+        <tr>
+            <th><input type="button" value="4" onclick="getval(4)"></th>
+            <th><input type="button" value="5" onclick="getval(5)"></th>
+            <th><input type="button" value="6" onclick="getval(6)"></th>
+            <th><input type="button" value="-" onclick="getval('-')"></th>
+        </tr>
+
+        <tr>
+            <th><input type="button" value="7" onclick="getval(7)"></th>
+            <th><input type="button" value="8" onclick="getval(8)"></th>
+            <th><input type="button" value="9" onclick="getval(9)"></th>
+            <th><input type="button" value="x" onclick="getval('x')"></th>
+        </tr>
+
+        <tr>
+            <th><input type="button" value="0" onclick="getval(0)"></th>
+            <th><input type="button" value="." onclick="getval('.')"></th>
+            <th><input type="button" value="c" onclick="cls()"></th>
+            <th><input type="button" value="/" onclick="getval('/')"></th>
+        </tr>
+        <tr>
+            <th colspan="4"><input type="button" value="=" onclick="result()"></th>
+        </tr>
+    </table>
+    <script src="calculator.js"></script>
+</body>
+</html>

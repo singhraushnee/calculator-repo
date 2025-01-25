@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 300px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(182, 114, 114);
+            margin-left: 440px;
+            margin-top: 100px;
+        }
+        .calculator {
+            border: 2px solid rgb(19, 16, 16);
+            padding: 15px;
+            border-radius: 15px;
+            background-color: rgb(228, 176, 108);
+        }
+        input {
+            width: 220px;
+            border: none;
+            padding: 10px;
+            background: transparent;
+            font-size: 45px;
+            text-align: right;
+        }
+        button {
+            border: none;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            font-size: 20px;
+            background-color: rgb(228, 176, 108);
+            box-shadow: -2px -2px 0px rgb(190, 120, 90);
+        }
+        #equalbtn {
+            background-color: orange;
+        }
+        #oper {
+            color: #7b9fbd;
+        }
+        #calbtn {
+            height: 50px;
+            width: 300px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1 id="calbtn">Calculator</h1>
+        <input type="text" id="display" placeholder="0" readonly>    
+        <div>
+            <button value="AC" id="oper">AC</button>
+            <button value="DEL" id="oper">DEL</button>
+            <button value="%" id="oper">%</button>
+            <button value="/" id="oper">/</button>
+        </div>
+        <div>
+            <button value="7">7</button>
+            <button value="8">8</button>
+            <button value="9">9</button>
+            <button value="*" id="oper">*</button>
+        </div>
+        <div>
+            <button value="4">4</button>
+            <button value="5">5</button>
+            <button value="6">6</button>
+            <button value="-" id="oper">-</button>
+        </div>
+        <div>
+            <button value="1">1</button>
+            <button value="2">2</button>
+            <button value="3">3</button>
+            <button value="+" id="oper">+</button>
+        </div>
+        <div>
+            <button value="0">00</button>
+            <button value="0">0</button>
+            <button value=".">.</button>
+            <button value="=" id="equalbtn">=</button>
+        </div>
+    </div>
+
+   
+</body>
+</html>
